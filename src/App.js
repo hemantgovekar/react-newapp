@@ -2,6 +2,8 @@
 // import Directory from './components/directory/directory.component';
 import Home from './routes/home/home.component'
 import Navigation from './routes/navigation/navigation.component'
+import SignIn from './routes/signIn/sign-in.component'
+
 import { Route, Routes } from 'react-router-dom'
 
 const App = () => {
@@ -19,6 +21,7 @@ const App = () => {
       <Route path="/" element={<Navigation />} >
         <Route index element={<Home />} />
         <Route path="shop" element={<Shop />} />
+        <Route path="sign-in" element={<SignIn />} />
       </Route>
     </Routes >
   );
